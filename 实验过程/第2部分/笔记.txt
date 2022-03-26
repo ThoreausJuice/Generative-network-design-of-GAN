@@ -1,0 +1,7 @@
+from scipy import misc
+misc.imsave('x.ppm', x)
+
+from PIL import Image
+img = Image.open('x.ppm')
+img.save('x.bmp')
+img.show()
